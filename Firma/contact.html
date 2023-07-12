@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yakob New Construct</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo">
+          <a href="index.html">
+            <img
+              src="imagini/Logo3.jpg"
+              width="225px"
+              height="90px"
+              alt="Logo-YAKOB NEW CONSTRUCT"
+            />
+          </a>
+        </li>
+        <li class="item"><a class="active" href="index.html">Acasă</a></li>
+        <li class="item"><a href="desprenoi.html">Despre Noi</a></li>
+        <li class="item">
+          <a href="proiectelenoastre.html">Proiectele Noastre</a>
+        </li>
+        <li class="item"><a href="proiectultau.html">Proiectul tău</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+        <li class="item button"><a href="login.html">Login</a></li>
+        <li class="item button secondary">
+          <a href="signup.html">Sign Up</a>
+        </li>
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+    <main class="contact">
+      <div class="overlay4">
+        <div class="container">
+          <h1>Contactează-ne</h1>
+
+          <section>
+            <h2>Informații de contact:</h2>
+            <ul class="contact-info">
+              <li>
+                <i class="fa fa-phone"></i><strong> +40 745 277 891</strong>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i
+                ><strong>
+                  <a href="mailto:YNCinfo@yahoo.com"
+                    >YNCinfo@yahoo.com</a
+                  ></strong
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Urmărește-ne</h2>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100094639295173"
+                  ><i class="bi bi-facebook">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      /></svg></i
+                ></a>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Contact Form</h2>
+            <form action="submit-form.php" method="POST">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div>
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        &copy; 2023 YAKOB New Construct. All rights reserved. Code by RAFIKI
+      </p>
+    </footer>
+  </body>
+</html>
